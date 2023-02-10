@@ -71,7 +71,7 @@ function image_upload_process_to_convert( $attachment_id ) {
 			$image = imagecreatefromstring($data);
 			if ($fileexe == 'jpg' || $fileexe == 'jpeg') imagejpeg($image, "$address/$filename-$size.$fileexe");
 			else if ($fileexe == 'png') imagepng($image, "$address/$filename-$size.$fileexe");
-
+			imagedestroy($image);
 		}
 		curl_close($curl);
 	}
