@@ -1,21 +1,50 @@
 <?php
 
 function deleteFile($address, $filename) {
-    unlink($address.'/'.$filename.'-large.webp');
-    unlink($address.'/'.$filename.'-large.jpg');
-    unlink($address.'/'.$filename.'-large.png');
-    unlink($address.'/'.$filename.'-medium.webp');
-    unlink($address.'/'.$filename.'-medium.jpg');
-    unlink($address.'/'.$filename.'-medium.png');
-    unlink($address.'/'.$filename.'-small.webp');
-    unlink($address.'/'.$filename.'-small.jpg');
-    unlink($address.'/'.$filename.'-small.png');
-    unlink($address.'/'.$filename.'-thumbnail.webp');
-    unlink($address.'/'.$filename.'-thumbnail.jpg');
-    unlink($address.'/'.$filename.'-thumbnail.png');
-    unlink($address.'/'.$filename.'.webp');
-    unlink($address.'/'.$filename.'.jpg');
-    unlink($address.'/'.$filename.'.png');
+    $file = $address.'/'.$filename.'-large.webp';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-large.jpg';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-large.png';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-medium.webp';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-medium.jpg';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-medium.png';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-small.webp';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-small.jpg';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-small.png';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-thumbnail.webp';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-thumbnail.jpg';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'-thumbnail.png';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'.webp';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'.jpg';
+    if (file_exists($file)) unlink($file);
+
+    $file = $address.'/'.$filename.'.png';
+    if (file_exists($file)) unlink($file);
 }
 
 ?>
